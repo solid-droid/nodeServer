@@ -28,8 +28,8 @@ network={
 # Setting up environment
 Update environment => [source](https://jamesjdavis.medium.com/how-to-update-raspberry-pi-just-follow-these-easy-steps-ac507cf70238#:~:text=To%20update%20the%20Raspberry%20Pi,Raspberry%20Pi's%20library%20of%20applications.)
 ```bash
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt update
+sudo apt upgrade
 sudo reboot
 ```
 Installing Nodejs 
@@ -51,6 +51,27 @@ node -v && npm -v
 
 Installin tmux (for multitasking)
 ```bash
-sudo apt-get install tmux
+sudo apt install tmux
 ```
  
+ Using Github
+ ```bash
+ sudo apt install git
+ git --version
+ ```
+ Make repo folder
+ ```bash
+ cd /
+ ls
+ mkdir repo
+ ls
+ cd repo
+ ```
+ clone your repo
+ ```
+ git clone <repoUrl https>
+ ```
+ if u get permision denied error
+ ```bash
+ sudo chmod -R 777 /<path of directory>
+ ```
